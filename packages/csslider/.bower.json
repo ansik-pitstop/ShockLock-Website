@@ -1,0 +1,14 @@
+{
+  "name": "csslider",
+  "homepage": "https://github.com/drygiel/csslider",
+  "_release": "e69299b33b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "e69299b33badbd790a9631a2362f4e801b65617f"
+  },
+  "_source": "https://github.com/drygiel/csslider.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/drygiel/csslider.git",
+  "_direct": true
+}

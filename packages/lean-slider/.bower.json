@@ -1,0 +1,32 @@
+{
+  "name": "lean-slider",
+  "main": "lean-slider.js",
+  "homepage": "https://github.com/gilbitron/Lean-Slider",
+  "authors": [
+    "Gilbert Pellegrom <gilbert@dev7studios.com>"
+  ],
+  "description": "A Lean and Progressive Free jQuery Image Slider",
+  "keywords": [
+    "lean",
+    "slider",
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "1.0.1",
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.1",
+    "commit": "c254dc3058cd352b8f52b407535d1d9d3bfd3260"
+  },
+  "_source": "git://github.com/gilbitron/Lean-Slider.git",
+  "_target": "~1.0.1",
+  "_originalSource": "lean-slider"
+}

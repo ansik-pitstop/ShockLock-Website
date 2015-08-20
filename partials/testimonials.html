@@ -1,0 +1,83 @@
+<section class="ambassadors">
+    <section class="inner">
+        <section class="ambassador" ng-repeat="ambassador in ambassadors"
+                 ng-click="setActive($index)"
+                 ng-class="activeID === $index ? 'active': 'not_active'">
+            <img src="{{ambassador.picture}}" alt="ambassador.name" style="width:100%;">
+            <h5 class="title">{{ambassador.name}}</h5>
+        </section>
+    </section>
+</section>
+<section class="content hasContent"></section>
+<section class="content hasContent alignLeft">
+    <section class="inner">
+        <h3 class="heading">{{active.name}}</h3>
+        <section class="links">
+            <a class="link" href="{{active.links.instagram}}" target="_blank">
+                <i class="ion-social-instagram"></i>
+            </a>
+            <a class="link" href="{{active.links.facebook}}" target="_blank">
+                <i class="ion-social-facebook"></i>
+            </a>
+            <a class="link" href="{{active.links.twitter}}" target="_blank">
+                <i class="ion-social-twitter"></i>
+            </a>
+            <a class="link" href="{{active.links.website}}" target="_blank">
+                <i class="ion-earth"></i>
+            </a>
+        </section>
+        <h5 class="heading2">
+            {{active.bio}}
+        </h5>
+    </section>
+</section>
+<section class="content hasContent">
+    <section class="inner">
+        <div class="csslider">
+            <input ng-repeat="image in active.images" type="radio" name="slides" id="{{'slides_' + ($index + 1)}}" ng-if="$first" checked />
+            <input ng-repeat="image in active.images" type="radio" name="slides" id="{{'slides_' + ($index + 1)}}" ng-if="!$first" />
+            <ul>
+                <li ng-repeat="image in active.images">
+                    <img src="{{image}}" alt="ShockLock Ambassadors">
+                </li>
+            </ul>
+            <div class="arrows">
+                <label ng-repeat="image in active.images" for="{{'slides_' + ($index + 1)}}"></label>
+            </div>
+            <div class="navigation">
+                <div>
+                    <label for="{{'slides_' + ($index + 1)}}"></label>
+                    <label for="slides_1" class="goto-last"></label>
+                    <label for="{{'slides_' + active.images.length}}" class="goto-first"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<section class="content hasContent"></section>
+<section class="content hasContent">
+    <section class="columns">
+        <section class="column-4 alignCenter" ng-repeat="comment in active.comments">
+            <p class="description">
+                {{comment.content}}
+            </p>
+            <h6 class="title">
+                {{comment.by}}
+            </h6>
+        </section>
+    </section>
+</section>
+<!--<section class="content hasContent">
+    <section class="inner">
+        <iframe height="500" src="{{trustSrc('https://www.youtube-nocookie.com/embed/' + active.video + '?rel=0&amp;showinfo=0')}}" frameborder="0" allowfullscreen></iframe>
+    </section>
+</section>-->
+<section class="fancyDivider"></section>
+<section class="content beforeFooter">
+    <section class="inner">
+        <h3 class="heading">Got A Question?</h3>
+        <h5 class="heading2">
+            Shoot us an email at info@shocklock.ca and we will get back to you as soon as possible.
+        </h5>
+    </section>
+</section>
